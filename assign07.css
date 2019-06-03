@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background: linear-gradient(#FF8000, #FF9A33)
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(to right, #0e0700, #b55b00);
+    color: #FF8000;
+    min-height: 80px;
+}
+
+header h1 {
+    padding-left: 20px;
+}
+
+header a {
+    display: inline-block;
+    padding: 20px 50px;
+    margin: 0px 20px;
+    color: #ff8000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header a:hover {
+    color:black;
+}
+
+header li {
+    display: inline-block;
+}
+
+header div {
+    float: left;
+}
+
+header nav {
+    float: right;
+}
+
+/**********************************************************************************
+    banner section
+***********************************************************************************/
+#first-banner {
+    min-height: 400px;
+    text-align: center;
+}
+
+#first-banner-background {
+    position: absolute;
+    z-index: -1;
+    width: 80%;
+    min-height: 400px;
+    background-image: url("./motorcycle-engine.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.4;
+}
+
+#first-banner h1 {
+    margin: 40px 0px;
+    font-size: 3em;
+    font-weight: bolder;
+}
+#first-banner p {
+    margin: 40px 40px;
+    font-size: 1.4em;
+    width: auto;
+    font-weight: bolder;
+}
+/******************************************************************************/
+
+/****************************************appointment*************************************/
+#apointment-schedule {
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+#apointment-schedule h1 {
+    margin: 30px 30px;
+    font-size: 1.4em;
+    font-weight: bolder;
+    float: left;
+}
+
+#apointment-schedule form {
+    float: right;
+    margin: 30px 30px;
+}
+
+#apointment-schedule input {
+    background-color: #FF8000;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#apointment-schedule button {
+    border: 0;
+    box-shadow: 0;
+    background: 0;
+    border: 1px solid black;
+    height: 20px;
+}
+
+#apointment-schedule button:hover {
+    background-color: black;
+    color: #FF8000;
+}
+/*************************************************************************************/
+
+/**************************type of work***********************************************/
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.box {
+    flex-basis: 30%;
+}
+
+/*************************************************************************************/
+
+footer {
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(to right, #0e0700, #b55b00);
+    float: left;
+    color: #FF8000
+}
+footer h2 {
+    margin: 10px;
+}
+/*******************************************************************/
+
+/************************media queries***********************************/
+@media screen and (max-width: 1000px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    
+    .box {
+        display: flex;
+        flex-basis: 30%;
+        border-bottom: 1px solid black;
+    }
+
+    .box h3 {
+        order: 1;
+    }
+
+    .box p {
+        order: 3;
+    }
+
+    .box img {
+        order: 2;
+        height: 50%;
+    }
+}
+/***********************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
